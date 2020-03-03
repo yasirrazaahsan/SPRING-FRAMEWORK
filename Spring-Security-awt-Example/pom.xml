@@ -11,16 +11,20 @@
 	</parent>
 	<groupId>com.javatechie</groupId>
 	<artifactId>Spring-Security-awt-Example</artifactId>
+	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Spring-Security-awt-Example</name>
 	<description>Spring Boot AWT project</description>
-	<packaging>war</packaging>
-
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
